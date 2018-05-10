@@ -52,7 +52,7 @@ function! s:CurrentVCSCommit(target_dir, sha)
   if a:sha =~# 'fatal'
     return ''
   else
-    return ' (' . a:sha[0:8] . ')'
+    return ' (' . a:sha[0:10] . ')'
   endif
 endfunction
 
